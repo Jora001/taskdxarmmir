@@ -2,8 +2,6 @@
     background-color: #252B42;
     width: 100%;
     height: 1236px;
-    gap: 0px;
-    opacity: 0px;
 }
 
 .text1, .text2 {
@@ -11,10 +9,6 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: white;
 }
 
@@ -30,15 +24,6 @@
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    /* width: 114px; */
-    height: 24px;
-    gap: 0px;
-    opacity: 0px;
     color: #23A6F0;
 }
 
@@ -46,16 +31,7 @@
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
-    line-height: 50px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: white;
-    /* width: 710px; */
-    height: 50px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: -18px;
     margin-bottom: -7px;
 }
@@ -64,10 +40,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: Fixed (692px)px;
-    height: Hug (134px)px;
-    gap: 0px;
-    opacity: 0px;   
     padding-top: 113px;
 } 
 
@@ -79,13 +51,9 @@
 .rating span {
     color: white;
     margin-left: 8px;
-    padding-right: 3px;
-    margin-top: 1px;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.20000000298023224px;
 }
 
 .carousel {
@@ -108,18 +76,7 @@
     color: #40BB15;
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.10000000149011612px;
     margin-top: 23px;
-}
-
-.sales span {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.20000000298023224px;
-    color: #737373;
-    margin-left: 8px;
 }
 
 .arrow {
@@ -135,12 +92,7 @@
     color: #737373;
     font-family: Montserrat;
     font-size: 14px;
-    font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .graphicdesign {
@@ -148,11 +100,6 @@
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.10000000149011612px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .content a {
@@ -161,20 +108,15 @@
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
-.box1, .box2{
+.box1, .box2 {
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
-.box1{
+.box1 {
     margin-right: 15px;
 }
 
@@ -187,10 +129,8 @@
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0.20000000298023224px;
     color: #737373;
-    margin: 0px 7px
+    margin: 0px 7px;
 }
 
 .carousel button {
@@ -200,11 +140,7 @@
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: left;
-    padding: 10px 20px 10px 20px;
-    gap: 10px;
+    padding: 10px 20px;
     border-radius: 50px;
     margin-top: 27px;
     display: flex;
@@ -214,12 +150,6 @@
 
 .carousel button:hover {
     background-color: rgb(240, 240, 240);
-}
-
-.rating {
-    color:#444;
-    padding: 5px;
-    text-align: center;
 }
 
 .rating {
@@ -233,33 +163,11 @@
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 1px;
-    position: absolute;
-    margin-top: 18px;
     background-color: #E74040;
-    margin-left: 20px;
     padding: 1px 10px;
-    border-radius: 7%;
-    color: #FFFFFF;
-}
-
-.options {
-    position: absolute;
-    margin-top: 239px;
-    margin-left: 99px;
+    border-radius: 5px;
 }
 
 .options img {
     cursor: pointer;
 }
-
-.basket {
-    margin-left: 13px;
-    margin-right: 13px;
-}
-/* 
-.profile2 {
-    width: 330px;
-    height: 300px;
-} */

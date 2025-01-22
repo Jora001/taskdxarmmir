@@ -20,7 +20,7 @@ function Section2(){
     </div>
     
         <div className={styles.forP}>
-            <p className={styles.p1}>Make online education<br></br>
+            <p className={styles.p1}>Make online edducation<br></br>
             accessible</p>
             <img src={line} className={styles.line} alt="line"/>
             <p className={styles.p2}>Problems trying to resolve the conflict between<br></br> 

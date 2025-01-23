@@ -1,5 +1,5 @@
-import styles from "./Content.module.css";
 import React from "react";
+import styles from "./Content.module.css";
 import computer from "../../pics/computer_pic.png";
 import profile1 from "../../pics/profile1.png";
 import star from "../../icons/star.png";
@@ -8,112 +8,88 @@ import alarm from "../../icons/alarm.png";
 import waves from "../../icons/waves.png";
 import mountain from "../../icons/mountain.png";
 import arrow from "../../icons/vector.png";
-import basket from "../../icons/basket.png";
-import heart from "../../icons/heart.png";
-import eye from "../../icons/eye.png";
 
-function Content(){
-    return (<div className={styles.content}>
-        <div className={styles.title}>
-            <h6>Practice Advice</h6>
-            <h2>Packages that are aprodable</h2>
-            <div className={styles.text}>
-                <span className={styles.text1}>Problems trying to resolve the conflict between<br /></span>
-                <span className={styles.text2}>the two major realms of Classical physics: Newtonian mechanics</span>
+// Reusable Card Component
+function Card({ image, title, rating, sales, price, duration, lessons, description }) {
+    return (
+        <div className={styles.card}>
+            <img src={image} alt={title} className={styles.cardImage} />
+            <div className={styles.description}>
+                <div className={styles.line1}>
+                    <a href="http://facebook.com" className={styles.cardTitle}>{title}</a>
+                    <div className={styles.rating}>
+                        <img src={star} alt="Rating Star" />
+                        <span>{rating}</span>
+                    </div>
+                </div>
+                <p className={styles.text}>{description}</p>
+                <div className={styles.sales}>
+                    <img src={frame} alt="" className={styles.arrow} />
+                    <span>{sales} Sales</span>
+                </div>
+                <div className={styles.price}>
+                    <span className={styles.leftprice}>${price.original}</span>
+                    <span className={styles.rightprice}>${price.discounted}</span>
+                </div>
+                <div className={styles.details}>
+                    <img src={alarm} alt="Duration Icon" />
+                    <span>{duration}</span>
+                    <img src={waves} alt="Lessons Icon" />
+                    <span>{lessons} Lessons</span>
+                    <img src={mountain} alt="Progress Icon" />
+                    <span>Progress</span>
+                </div>
+                <button className={styles.learnMoreButton}>
+                    <span>Learn More</span>
+                    <img src={arrow} alt="Arrow Icon" />
+                </button>
             </div>
         </div>
-        <div className={styles.carousel}>
-            <div className={styles.box1}>
-                <img src={computer} alt="cmp" />
-                <div className={styles.description}>
-                    <div className={styles.line1}>
-                        <a href="http://facebook.com">English Departement</a>
-                        <div className={styles.rating}>
-                            <img src={star} alt="" />
-                            <span>4.9</span>
-                        </div>
-                    </div>
-                    <span className={styles.graphicdesign}>Graphic Design</span>
-                    <p className={styles.text}>We focus on ergonomics and meeting<br />you where you work. It's only a<br />keystroke away.</p>
-                    <div className={styles.sales}>
-                        <img src={frame} alt="" className={styles.arrow} />
-                        <span>15 Sales</span>
-                    </div>
-                    <div className={styles.price}>
-                        <span className={styles.leftprice}>$16.48</span>
-                        <span className={styles.rightprice}>$6.48</span>
-                    </div>
-                    <div className={styles.details}>
-                        <img src={alarm} alt="" />
-                        <span>22hr 30min</span>
-                        <img src={waves} alt="" />
-                        <span>64 Lessons</span>
-                        <img src={mountain} alt="" />
-                        <span>Progress</span>
-                    </div>
-                    <div>
-                        <button>
-                            <span>Learn More</span>
-                            <img src={arrow} alt="" />
-                        </button>
-                    </div>
-                </div> 
-                <div className={styles.addition}>
-                    <span>Sale</span>
-                </div>
-                <div className={styles.options}>
-                    <img src={heart} alt="" />
-                    <img className={styles.basket} src={basket} alt="" />
-                    <img src={eye} alt="" />
+    );
+}
+
+function Content() {
+    const cardsData = [
+        {
+            image: computer,
+            title: "English Department",
+            rating: "4.9",
+            sales: 15,
+            price: { original: "16.48", discounted: "6.48" },
+            duration: "22hr 30min",
+            lessons: 64,
+            description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        },
+        {
+            image: profile1,
+            title: "Graphic Design",
+            rating: "4.8",
+            sales: 12,
+            price: { original: "20.00", discounted: "10.00" },
+            duration: "18hr 45min",
+            lessons: 48,
+            description: "Learn the basics of graphic design to enhance your creative skills.",
+        },
+    ];
+
+    return (
+        <div className={styles.content}>
+            <div className={styles.title}>
+                <h6>Practice Advice</h6>
+                <h2>Packages that are affordable</h2>
+                <div className={styles.text}>
+                    <span>Problems trying to resolve the conflict between</span>
+                    <br />
+                    <span>the two major realms of Classical physics: Newtonian mechanics</span>
                 </div>
             </div>
-            <div className={styles.box2}>
-                <img src={profile1} alt="p2" />
-                <div className={styles.description}>
-                    <div className={styles.line1}>
-                        <a href="http://facebook.com">English Departement</a>
-                        <div className={styles.rating}>
-                            <img src={star} alt="" />
-                            <span>4.9</span>
-                        </div>
-                    </div>
-                    <span className={styles.graphicdesign}>Graphic Design</span>
-                    <p className={styles.text}>We focus on ergonomics and meeting<br />you where you work. It's only a<br />keystroke away.</p>
-                    <div className={styles.sales}>
-                        <img src={frame} alt="" className={styles.arrow} />
-                        <span>15 Sales</span>
-                    </div>
-                    <div className={styles.price}>
-                        <span className={styles.leftprice}>$16.48</span>
-                        <span className={styles.rightprice}>$6.48</span>
-                    </div>
-                    <div className={styles.details}>
-                        <img src={alarm} alt="" />
-                        <span>22hr 30min</span>
-                        <img src={waves} alt="" />
-                        <span>64 Lessons</span>
-                        <img src={mountain} alt="" />
-                        <span>Progress</span>
-                    </div>
-                    <div>
-                        <button>
-                            <span>Learn More</span>
-                            <img src={arrow} alt="" />
-                        </button>
-                    </div>
-                </div>
-                <div className={styles.addition}>
-                    <span>Sale</span>
-                </div>
-                <div className={styles.options}>
-                    <img src={heart} alt="" />
-                    <img className={styles.basket} src={basket} alt="" />
-                    <img src={eye} alt="" />
-                </div>
+            <div className={styles.carousel}>
+                {cardsData.map((card, index) => (
+                    <Card key={index} {...card} />
+                ))}
             </div>
-          
         </div>
-    </div>)
+    );
 }
 
 export default Content;

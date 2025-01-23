@@ -5,7 +5,7 @@ import boximage from "../../images/boximage.png"
 import largebox from "../../images/largebox.png"
 import square from "../../images/square.png"
 import smallrectangle from "../../images/smallrectangle.png"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Section2(){
@@ -20,7 +20,7 @@ function Section2(){
     </div>
     
         <div className={styles.forP}>
-            <p className={styles.p1}>Make online edducation<br></br>
+            <p className={styles.p1}>Make online education<br></br>
             accessible</p>
             <img src={line} className={styles.line} alt="line"/>
             <p className={styles.p2}>Problems trying to resolve the conflict between<br></br> 

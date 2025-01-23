@@ -1,11 +1,12 @@
 .Subscribe {
-    width: 100%;
+    width: 1440px;
     height: 594px;
     gap: 0px;
     opacity: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 430px;
 }
 
 .Subscribe button {
